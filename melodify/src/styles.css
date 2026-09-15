@@ -1,0 +1,89 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer base {
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-outfit;
+  }
+div {
+  @apply font-poppins;
+}
+}
+
+.gradient-circlel {
+  width: 1400px;                /* Width of the circle */
+  height: 750px;   
+  left: -700px;            /* Height of the circle (same as width for a perfect circle) */
+  border-radius: 00%;          /* Make the div a circle */
+  background: radial-gradient(circle, #97c1eb 5%, #ffffff00 50%, #ffffff00 100%);/* Apply circular gradient */
+  position: absolute;
+  z-index: 0;
+}
+
+.gradient-circler {
+  width: 1400px;                /* Width of the circle */
+  height: 750px;   
+  right: -700px;            /* Height of the circle (same as width for a perfect circle) */
+  border-radius: 00%;          /* Make the div a circle */
+  background: radial-gradient(circle, #97c1eb 5%, #ffffff00 50%, #ffffff00 100%);/* Apply circular gradient */
+  position: absolute;
+  z-index: 0;
+}
+.bg-gradient {
+  width: screen;                /* Width of the circle */
+  height: screen;   
+  left: -700px;            /* Height of the circle (same as width for a perfect circle) */
+  border-radius: 00%;          /* Make the div a circle */
+  background: radial-gradient(circle, #ffffff 5%, #97c1eb75 50%, #97c1eb5f 100%);/* Apply circular gradient */
+
+  z-index: 0;
+}
+
+.paragraph {
+  position: relative;
+  margin-left: 10rem;
+  margin-top: 5rem;
+  z-index: 1;
+
+}
+.full-page-div {
+  position: fixed; /* Use fixed positioning */
+  top: 0; /* Align to the top */
+  left: 0; /* Align to the left */
+  width: 100vw; /* Full width of the viewport */
+  height: 100vh; /* Full height of the viewport */
+  background-color: #3498db; /* Set background color */
+  color: white; /* Set text color */
+  display: flex; /* Center content */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  font-size: 24px; /* Text size */
+}
+
+
+
+body {
+  background-color: #FBF9F8;
+  overflow-x: hidden;
+
+}
+.bg-parch {
+  background-color: #FBF9F8;
+}
+
+.bg-bblue {
+  background-color: #1350B2;
+}
+
+.text-dark-blue {
+  color: #1350B2;
+}
+.shadow-mid-blue {
+  box-shadow: -10px 10px #C2D9FE;
+}
